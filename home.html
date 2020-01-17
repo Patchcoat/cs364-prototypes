@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Work Ticket</title>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="/"><span class="gliphicon glyphicon-home"></span> Home</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-right">
+                        <a href="">Current Jobs</a>
+                    </li> 
+                    <li class="navbar-right">
+                        <a href="">Search For Jobs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Important Tickets</h1>
+                        <div class="d-flex Box-row position-relative">
+                            <div class="flex-shrink-0">
+      <span class="tooltipped tooltipped-e" aria-label="Open issue">
+        <svg class="octicon octicon-issue-opened open" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+      </span>
+                            </div>
+                            <div class="flex-auto">
+                                <a class="h4" href="issue.html">Replace Leaky Faucet</a>
+                                <span class="labels">Bathroom</span>
+                                <div class="mt-1 text-small text-gray">Deadline - 2020-1-30</div>
+                            </div>
+                            <div class="flex-shrink-0 col-3 d-flex">
+                                <div class="col-6 no-wrap pt-2 pr-3 text-right">
+                                Johnson's home
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="col-md-12">
+                <h1>All Tickets</h1>
+                <div class="d-flex flex-justify-between mb-3">
+                    <div class="ml-3"><svg class="octicon octicon-search subnav-search-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+                    </div>
+                    <div class="d-flex flex-justify-start flex-auto width-full ml-3" role="search">
+                        <form class="subnav-search width-full" role="search">
+                            <input type="text" class="form-control subnav-search-input input-contrast width-full" placeholder="Filter Tickets">
+                        </form>
+                    </div>
+                    <div class="ml-3">
+                        <a href="new-issue.html" class="btn btn-primary" role="button">Filter</a>
+                    </div>
+                    <div class="ml-3">
+                        <a href="new-issue.html" class="btn btn-secondary" role="button">New Ticket</a>
+                    </div>
+                    <div class="dropdown ml-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort By
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Due Soonest</a>
+                        <a class="dropdown-item" href="#">Due Latest</a>
+                        <a class="dropdown-item" href="#">Open First</a>
+                        <a class="dropdown-item" href="#">Closed First</a>
+                        <a class="dropdown-item" href="#">Alphabetically</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="Box mt-3">
+                    <div role="group" class="js-navigation-container js-active-navigation-container">
+                        <div class="d-flex Box-row position-relative">
+                            <div class="flex-shrink-0">
+      <span class="tooltipped tooltipped-e" aria-label="Open issue">
+        <svg class="octicon octicon-issue-opened open" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+      </span>
+                            </div>
+                            <div class="flex-auto">
+                                <a class="h4" href="issue.html">Replace Leaky Faucet</a>
+                                <span class="labels">Bathroom</span>
+                                <div class="mt-1 text-small text-gray">Deadline - 2020-1-30</div>
+                            </div>
+                            <div class="flex-shrink-0 col-3 d-flex">
+                                <div class="col-6 no-wrap pt-2 pr-3 text-right">
+                                Johnson's home
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex Box-row position-relative">
+                            <div class="flex-shrink-0">
+      <span class="tooltipped tooltipped-e" aria-label="Closed issue">
+        <svg class="octicon octicon-issue-closed closed" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 012.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 008 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"></path></svg>
+      </span>
+                            </div>
+                            <div class="flex-auto">
+                                <a class="h4" href="issue.html">Install Microwave</a>
+                                <span class="labels">Kitchen</span>
+                                <div class="mt-1 text-small text-gray">Deadline - 2020-1-5</div>
+                            </div>
+                            <div class="flex-shrink-0 col-3 d-flex">
+                                <div class="col-6 no-wrap pt-2 pr-3 text-right">
+                                Johnson's home
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex Box-row position-relative">
+                            <div class="flex-shrink-0">
+      <span class="tooltipped tooltipped-e" aria-label="Closed issue">
+        <svg class="octicon octicon-issue-closed closed" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 012.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 008 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"></path></svg>
+      </span>
+                            </div>
+                            <div class="flex-auto">
+                                <a class="h4" href="issue.html">Replace Oven Heating Element</a>
+                                <span class="labels">Kitchen</span>
+                                <div class="mt-1 text-small text-gray">Deadline - 2020-1-11</div>
+                            </div>
+                            <div class="flex-shrink-0 col-3 d-flex">
+                                <div class="col-6 no-wrap pt-2 pr-3 text-right">
+                                Johnson's home
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex Box-row position-relative">
+                            <div class="flex-shrink-0">
+      <span class="tooltipped tooltipped-e" aria-label="Closed issue">
+        <svg class="octicon octicon-issue-closed closed" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 012.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 008 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"></path></svg>
+      </span>
+                            </div>
+                            <div class="flex-auto">
+                                <a class="h4" href="issue.html">Talk with Charlie Croker</a>
+                                <span class="labels">Bullion</span>
+                                <div class="mt-1 text-small text-gray">Deadline - 1969-6-5</div>
+                            </div>
+                            <div class="flex-shrink-0 col-3 d-flex">
+                                <div class="col-6 no-wrap pt-2 pr-3 text-right">
+                                Italian Job
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex Box-row position-relative">
+                            <div class="flex-shrink-0">
+      <span class="tooltipped tooltipped-e" aria-label="Open issue">
+        <svg class="octicon octicon-issue-opened open" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+      </span>
+                            </div>
+                            <div class="flex-auto">
+                                <a class="h4" href="issue.html">Buy New Rug</a>
+                                <span class="labels">Bathroom</span>
+                                <div class="mt-1 text-small text-gray">Deadline - 2020-1-25</div>
+                            </div>
+                            <div class="flex-shrink-0 col-3 d-flex">
+                                <div class="col-6 no-wrap pt-2 pr-3 text-right">
+                                Davis Redecorating
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

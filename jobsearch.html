@@ -10,81 +10,85 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="home.html"><span class="gliphicon glyphicon-home"></span> Home</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="navbar-right">
-                        <a href="jobs.html">Current Jobs</a>
-                    </li> 
-                    <li class="navbar-right">
-                        <a href="jobsearch.html">Search For Jobs</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#">Work Ticket</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"><span class="gliphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">Current Jobs</a>
+                        </li> 
+                        <li class="nav-item active">
+                            <a class="nav-link" href="jobsearch.html">Search For Jobs</a>
+                        </li>
+                    </ul>
+                    <a class="nav-item nav-link" href="#">Logout</a>
+                </div>
             </div>
         </nav>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Job Search</h1>
-                <div class="d-flex flex-justify-between mb-3">
-                    <div class="ml-3"><svg class="octicon octicon-search subnav-search-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
-                    </div>
-                    <div class="d-flex flex-justify-start flex-auto width-full ml-3" role="search">
-                        <form class="subnav-search width-full" role="search">
-                            <input type="text" class="form-control subnav-search-input input-contrast width-full" placeholder="Search for Jobs">
-                        </form>
-                    </div>
-                    <div class="ml-3">
-                        <a href="new-issue.html" class="btn btn-primary" role="button">Search</a>
-                    </div>
-                    <div class="dropdown ml-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sort By
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Latest</a>
-                            <a class="dropdown-item" href="#">Alphabetically</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Job Search</h1>
+                    <div class="d-flex flex-justify-between mb-3">
+                        <div class="ml-3"><svg class="octicon octicon-search subnav-search-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+                        </div>
+                        <div class="d-flex flex-justify-start flex-auto width-full ml-3" role="search">
+                            <form class="subnav-search width-full" role="search">
+                                <input type="text" class="form-control subnav-search-input input-contrast width-full" placeholder="Search for Jobs">
+                            </form>
+                        </div>
+                        <div class="ml-3">
+                            <a href="new-issue.html" class="btn btn-primary" role="button">Search</a>
+                        </div>
+                        <div class="dropdown ml-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sort By
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Latest</a>
+                                <a class="dropdown-item" href="#">Alphabetically</a>
+                            </div>
+                        </div>
+                        <div class="dropdown ml-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Job Type
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Handyman</a>
+                                <a class="dropdown-item" href="#">Plumbing</a>
+                                <a class="dropdown-item" href="#">Electrician</a>
+                                <a class="dropdown-item" href="#">Tech Support</a>
+                                <a class="dropdown-item" href="#">Creative</a>
+                                <a class="dropdown-item" href="#">Carpenter</a>
+                                <a class="dropdown-item" href="#">Buisness</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown ml-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Job Type
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Handyman</a>
-                            <a class="dropdown-item" href="#">Plumbing</a>
-                            <a class="dropdown-item" href="#">Electrician</a>
-                            <a class="dropdown-item" href="#">Tech Support</a>
-                            <a class="dropdown-item" href="#">Creative</a>
-                            <a class="dropdown-item" href="#">Carpenter</a>
-                            <a class="dropdown-item" href="#">Buisness</a>
+                    <div class="col-md-12 job-list">
+                        <div class="col-md-12 job-item">
+                            <a class="h4" href="job.html">Help Needed Framing a Shed</a>
+                            <div>Posted 3 days ago</div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-12 job-list">
-                    <div class="col-md-12 job-item">
-                        <a class="h4" href="job.html">Help Needed Framing a Shed</a>
-                        <div>Posted 3 days ago</div>
-                    </div>
-                    <div class="col-md-12 job-item">
-                        <a class="h4" href="job.html">Plumber wanted for installing dishwasher</a>
-                        <div>Posted 1 day ago</div>
-                    </div>
-                    <div class="col-md-12 job-item">
-                        <a class="h4" href="job.html">Why is my computer so slow?</a>
-                        <div>Posted 6 weeks ago</div>
-                    </div>
-                    <div class="col-md-12 job-item">
-                        <a class="h4" href="job.html">Time machine testers wanted.</a>
-                        <div>Posted -8 days ago</div>
-                    </div>
-                    <div class="col-md-12 job-item">
-                        <a class="h4" href="job.html">Install Light Fixture</a>
-                        <div>Posted 4 days ago</div>
+                        <div class="col-md-12 job-item">
+                            <a class="h4" href="job.html">Plumber wanted for installing dishwasher</a>
+                            <div>Posted 1 day ago</div>
+                        </div>
+                        <div class="col-md-12 job-item">
+                            <a class="h4" href="job.html">Why is my computer so slow?</a>
+                            <div>Posted 6 weeks ago</div>
+                        </div>
+                        <div class="col-md-12 job-item">
+                            <a class="h4" href="job.html">Time machine testers wanted.</a>
+                            <div>Posted -8 days ago</div>
+                        </div>
+                        <div class="col-md-12 job-item">
+                            <a class="h4" href="job.html">Install Light Fixture</a>
+                            <div>Posted 4 days ago</div>
+                        </div>
                     </div>
                 </div>
             </div>

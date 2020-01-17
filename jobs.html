@@ -10,48 +10,52 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="home.html"><span class="gliphicon glyphicon-home"></span> Home</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="navbar-right">
-                        <a href="jobs.html">Current Jobs</a>
-                    </li> 
-                    <li class="navbar-right">
-                        <a href="jobsearch.html">Search For Jobs</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#">Work Ticket</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"><span class="gliphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="jobs.html">Current Jobs</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobsearch.html">Search For Jobs</a>
+                        </li>
+                    </ul>
+                    <a class="nav-item nav-link" href="#">Logout</a>
+                </div>
             </div>
         </nav>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Current Jobs</h1>
-                <div class="col-md-12 job">
-                    <div class="job-title h4">
-                        <a href="job.html">Johnson's home</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Current Jobs</h1>
+                    <div class="col-md-12 job">
+                        <div class="job-title h4">
+                            <a href="job.html">Johnson's home</a>
+                        </div>
+                        <div class="job-type">
+                            Handyman
+                        </div>
                     </div>
-                    <div class="job-type">
-                        Handyman
+                    <div class="col-md-12 job">
+                        <div class="job-title h4">
+                            <a href="job.html">Davis Redecorating</a>
+                        </div>
+                        <div class="job-type">
+                            Interior Decorator
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-12 job">
-                    <div class="job-title h4">
-                        <a href="job.html">Davis Redecorating</a>
-                    </div>
-                    <div class="job-type">
-                        Interior Decorator
-                    </div>
-                </div>
-                <div class="col-md-12 job">
-                    <div class="job-title h4">
-                        <a href="job.html">Italian Job</a>
-                    </div>
-                    <div class="job-type">
-                        Acquisitions
+                    <div class="col-md-12 job">
+                        <div class="job-title h4">
+                            <a href="job.html">Italian Job</a>
+                        </div>
+                        <div class="job-type">
+                            Acquisitions
+                        </div>
                     </div>
                 </div>
             </div>

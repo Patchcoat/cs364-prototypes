@@ -10,37 +10,40 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="home.html"><span class="gliphicon glyphicon-home"></span> Home</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="navbar-right">
-                        <a href="jobs.html">Current Jobs</a>
-                    </li> 
-                    <li class="navbar-right">
-                        <a href="jobsearch.html">Search For Jobs</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#">Work Ticket</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html"><span class="gliphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">Current Jobs</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobsearch.html">Search For Jobs</a>
+                        </li>
+                    </ul>
+                    <a class="nav-item nav-link" href="#">Logout</a>
+                </div>
             </div>
         </nav>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Replace Leaky Faucet <a class="btn btn-outline-success status">Open</a></h1>
-                <a href="#">rename ticket</a>
-                <h4>Job: <a href="#">Johnson's Home</a></h4>
-                <h4>Deadline - 2020-1-30</h4>
-                <h4>Tags</h4>
-                <a href="#">edit tags</a>
-                <ul>
-                    <li>Bathroom</li>
-                </ul>
-                <h4>Description</h4>
-                <a href="#">edit description</a>
-                <p>Buy a new faucet and replace the one currently in the sink. This is for the guest bathroom with the dark wood cabnets.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Replace Leaky Faucet <button class="btn btn-outline-success status">Open</button> <button type="button" class="btn btn-danger">Important</button></h1>
+                    <a href="#">rename ticket</a>
+                    <h4>Deadline - 2020-1-30</h4>
+                    <h4>Job: <a href="#">Johnson's Home</a></h4>
+                    <h2>Tags</h2>
+                    <a href="#">edit tags</a>
+                    <br>
+                    <span class="labels blue-label">Bathroom</span>
+                    <h2>Description</h2>
+                    <a href="#">edit description</a>
+                    <p>Buy a new faucet and replace the one currently in the sink. This is for the guest bathroom with the dark wood cabnets.</p>
+                </div>
             </div>
         </div>
     </body>

@@ -1,0 +1,17 @@
+.labels {
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.blue-label {
+    background-color: #337ab7;
+}
+
+.red-label {
+    background-color: #f24236;
+}
+
+.gold-label {
+    background-color: #e4b363;
+}
